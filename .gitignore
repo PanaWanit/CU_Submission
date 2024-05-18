@@ -2,3 +2,4 @@
 **/[Tt]mp*
 **/[Tt]est*
 **/.vimrc
+*.DS_Store
