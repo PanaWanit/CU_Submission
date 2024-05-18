@@ -1,0 +1,12 @@
+*
+!*/
+!*.*
+.vscode/*
+.clangd
+*.cbp
+*.layout
+*.depend
+.DS_STORE
+*.o
+tmp.cpp
+**/.vimrc

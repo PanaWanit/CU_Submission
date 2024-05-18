@@ -1,1 +1,2 @@
-# CU_Submission
+# CU Submission
+Submissions for all courses registered at Chualongkorn University.

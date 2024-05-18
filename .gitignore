@@ -1,0 +1,4 @@
+.vscode/**
+**/[Tt]mp*
+**/[Tt]est*
+**/.vimrc

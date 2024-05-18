@@ -1,0 +1,123 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import biotite.sequence as seq
+import biotite.sequence.align as align
+import biotite.sequence.graphics as graphics
+
+
+l = [
+    "ccattttggg",
+    "ccaattatgg",
+    "ccatttctgg",
+    "ccatttatgt",
+    "ccttttatgt",
+    "tcgtttgttt",
+    "cctcacaagt",
+    "ccaaaaatag",
+    "ccaaatatgg",
+    "ccctttttcg",
+    "ccatattggg",
+    "ccgtttttag",
+    "ccattttaag",
+    "ccatttttag",
+    "caatttatag",
+    "ccatttttag",
+    "ccatttttag",
+    "ccattttaag",
+    "ccaatttagg",
+    "ccaatttagg",
+    "ctaaatatag",
+    "ccaataatag",
+    "ccaaatatag",
+    "ccaaaaatgg",
+    "ccattaatag",
+    "ccatatatag",
+    "ccattaatag",
+    "gcacacagac",
+    "cccgatatag",
+    "cctaaagtgt",
+    "ccgaaaaatg",
+    "cctaatacgg",
+    "ctatatatag",
+    "cctaaaatgg",
+    "cctaatatag",
+    "ccataaatgg",
+    "ccataaatgg",
+    "ccagatttag",
+    "ccataaatag",
+    "ccatatatgg",
+    "ccaaaaatag",
+    "ccataaatag",
+    "ccataaatag",
+    "ccatttatag",
+    "ccatatatgg",
+    "ccattaatgg",
+    "ctatattaag",
+    "ccataaatgg",
+    "ctatatttgt",
+    "ctataaatgt",
+    "caataattag",
+    "ccatatatag",
+    "ccatttatag",
+    "ccacatatag",
+    "ccatttatag",
+    "ccataaatag",
+    "ccataaacag",
+    "ccaaatatag",
+    "ccattaatag",
+    "ctaaatttag",
+    "ccataaatgg",
+    "ctcaaaatag",
+    "cctaaaatgg",
+    "ccataaatag",
+    "cctaatatag",
+    "ccaaaaatgg",
+    "ccaaaattag",
+    "ccaaaactag",
+    "ccatacatgg",
+    "ccaaaaatag",
+    "ccaaatatag",
+    "ccaaaaatag",
+    "taatttctcg",
+    "ccaaaaatag",
+    "ccaaaaatac",
+    "ccaattatag",
+    "ccaaaaaaag",
+    "ccaaataagg",
+    "ctaaaaatag",
+    "ctgtaaatag",
+    "ctaaaagaag",
+    "ctaaatatag",
+    "ctaaaagtag",
+    "ctaaaaatag",
+    "ctaaaagtag",
+    "ctacttaaag",
+    "ctataattgt",
+    "ccataagtgg",
+    "ctataaatag",
+    "ctataaatag",
+    "ctacttttgt",
+    "ccagaattag",
+    "cctaatatag",
+    "ccttttatag",
+    "ccttttatag",
+    "ccaaaattag",
+    "ccaaaattag",
+]
+# The list of Anderson promoters
+seqs = [seq.NucleotideSequence(x) for x in l]
+
+alignment = align.Alignment(
+    sequences=seqs,
+    trace=np.tile(np.arange(len(seqs[0])), len(seqs)).reshape(len(seqs), len(seqs[0])).transpose(),
+    score=0,
+)
+# # # Create sequence logo from alignment
+fig = plt.figure(figsize=(8.0, 1.5))
+ax = fig.add_subplot(111)
+profile = seq.SequenceProfile.from_alignment(alignment)
+graphics.plot_sequence_logo(ax, profile)
+# # # Remove the entire frame
+ax.axis("off")
+fig.tight_layout()
+plt.show()
