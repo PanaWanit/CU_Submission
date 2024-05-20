@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>P</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-9720" y="-2180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>\Clr</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-9280" y="-2380"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Z</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-8840" y="-2180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Clock</elementName>
+      <elementAttributes>
+        <entry>
+          <string>runRealTime</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>clock</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-9120" y="-1900"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>trigger</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-8840" y="-2000"/>
+    </visualElement>
+    <visualElement>
+      <elementName>D_FF</elementName>
+      <elementAttributes/>
+      <pos x="-9060" y="-2180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>D_FF</elementName>
+      <elementAttributes/>
+      <pos x="-9060" y="-2000"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>inverterConfig</string>
+          <inverterConfig>
+            <string>In_1</string>
+            <string>In_3</string>
+          </inverterConfig>
+        </entry>
+        <entry>
+          <string>Inputs</string>
+          <int>3</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-9600" y="-2200"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>inverterConfig</string>
+          <inverterConfig>
+            <string>In_1</string>
+          </inverterConfig>
+        </entry>
+        <entry>
+          <string>Inputs</string>
+          <int>3</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-9580" y="-2060"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Inputs</string>
+          <int>3</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-9580" y="-1960"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Or</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Inputs</string>
+          <int>3</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-9420" y="-2060"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>inverterConfig</string>
+          <inverterConfig>
+            <string>In_2</string>
+          </inverterConfig>
+        </entry>
+      </elementAttributes>
+      <pos x="-9200" y="-2200"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>inverterConfig</string>
+          <inverterConfig>
+            <string>In_2</string>
+          </inverterConfig>
+        </entry>
+      </elementAttributes>
+      <pos x="-9200" y="-2020"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="-9000" y="-2180"/>
+      <p2 x="-8920" y="-2180"/>
+    </wire>
+    <wire>
+      <p1 x="-9720" y="-2180"/>
+      <p2 x="-9640" y="-2180"/>
+    </wire>
+    <wire>
+      <p1 x="-9520" y="-2180"/>
+      <p2 x="-9460" y="-2180"/>
+    </wire>
+    <wire>
+      <p1 x="-9120" y="-2180"/>
+      <p2 x="-9060" y="-2180"/>
+    </wire>
+    <wire>
+      <p1 x="-9460" y="-2180"/>
+      <p2 x="-9360" y="-2180"/>
+    </wire>
+    <wire>
+      <p1 x="-9640" y="-2180"/>
+      <p2 x="-9600" y="-2180"/>
+    </wire>
+    <wire>
+      <p1 x="-8920" y="-2180"/>
+      <p2 x="-8840" y="-2180"/>
+    </wire>
+    <wire>
+      <p1 x="-9620" y="-2020"/>
+      <p2 x="-9580" y="-2020"/>
+    </wire>
+    <wire>
+      <p1 x="-9460" y="-2020"/>
+      <p2 x="-9420" y="-2020"/>
+    </wire>
+    <wire>
+      <p1 x="-9300" y="-2020"/>
+      <p2 x="-9200" y="-2020"/>
+    </wire>
+    <wire>
+      <p1 x="-9660" y="-1960"/>
+      <p2 x="-9580" y="-1960"/>
+    </wire>
+    <wire>
+      <p1 x="-9120" y="-1900"/>
+      <p2 x="-9100" y="-1900"/>
+    </wire>
+    <wire>
+      <p1 x="-9660" y="-2060"/>
+      <p2 x="-9600" y="-2060"/>
+    </wire>
+    <wire>
+      <p1 x="-9460" y="-2060"/>
+      <p2 x="-9420" y="-2060"/>
+    </wire>
+    <wire>
+      <p1 x="-9280" y="-2380"/>
+      <p2 x="-9260" y="-2380"/>
+    </wire>
+    <wire>
+      <p1 x="-9260" y="-2160"/>
+      <p2 x="-9220" y="-2160"/>
+    </wire>
+    <wire>
+      <p1 x="-9100" y="-2160"/>
+      <p2 x="-9060" y="-2160"/>
+    </wire>
+    <wire>
+      <p1 x="-9680" y="-2160"/>
+      <p2 x="-9620" y="-2160"/>
+    </wire>
+    <wire>
+      <p1 x="-9000" y="-2000"/>
+      <p2 x="-8920" y="-2000"/>
+    </wire>
+    <wire>
+      <p1 x="-9120" y="-2000"/>
+      <p2 x="-9060" y="-2000"/>
+    </wire>
+    <wire>
+      <p1 x="-8920" y="-2000"/>
+      <p2 x="-8840" y="-2000"/>
+    </wire>
+    <wire>
+      <p1 x="-9640" y="-1940"/>
+      <p2 x="-9580" y="-1940"/>
+    </wire>
+    <wire>
+      <p1 x="-9500" y="-1940"/>
+      <p2 x="-9460" y="-1940"/>
+    </wire>
+    <wire>
+      <p1 x="-9680" y="-2200"/>
+      <p2 x="-9660" y="-2200"/>
+    </wire>
+    <wire>
+      <p1 x="-9360" y="-2200"/>
+      <p2 x="-9200" y="-2200"/>
+    </wire>
+    <wire>
+      <p1 x="-9660" y="-2200"/>
+      <p2 x="-9620" y="-2200"/>
+    </wire>
+    <wire>
+      <p1 x="-9640" y="-2040"/>
+      <p2 x="-9580" y="-2040"/>
+    </wire>
+    <wire>
+      <p1 x="-9500" y="-2040"/>
+      <p2 x="-9420" y="-2040"/>
+    </wire>
+    <wire>
+      <p1 x="-9340" y="-2040"/>
+      <p2 x="-9300" y="-2040"/>
+    </wire>
+    <wire>
+      <p1 x="-9100" y="-1980"/>
+      <p2 x="-9060" y="-1980"/>
+    </wire>
+    <wire>
+      <p1 x="-9260" y="-1980"/>
+      <p2 x="-9220" y="-1980"/>
+    </wire>
+    <wire>
+      <p1 x="-9680" y="-2300"/>
+      <p2 x="-8920" y="-2300"/>
+    </wire>
+    <wire>
+      <p1 x="-9680" y="-1820"/>
+      <p2 x="-9620" y="-1820"/>
+    </wire>
+    <wire>
+      <p1 x="-9620" y="-1820"/>
+      <p2 x="-8920" y="-1820"/>
+    </wire>
+    <wire>
+      <p1 x="-9620" y="-1920"/>
+      <p2 x="-9580" y="-1920"/>
+    </wire>
+    <wire>
+      <p1 x="-9620" y="-2020"/>
+      <p2 x="-9620" y="-1920"/>
+    </wire>
+    <wire>
+      <p1 x="-9620" y="-1920"/>
+      <p2 x="-9620" y="-1820"/>
+    </wire>
+    <wire>
+      <p1 x="-9460" y="-2180"/>
+      <p2 x="-9460" y="-2060"/>
+    </wire>
+    <wire>
+      <p1 x="-9460" y="-2020"/>
+      <p2 x="-9460" y="-1940"/>
+    </wire>
+    <wire>
+      <p1 x="-9300" y="-2040"/>
+      <p2 x="-9300" y="-2020"/>
+    </wire>
+    <wire>
+      <p1 x="-8920" y="-2300"/>
+      <p2 x="-8920" y="-2180"/>
+    </wire>
+    <wire>
+      <p1 x="-8920" y="-2000"/>
+      <p2 x="-8920" y="-1820"/>
+    </wire>
+    <wire>
+      <p1 x="-9640" y="-2180"/>
+      <p2 x="-9640" y="-2040"/>
+    </wire>
+    <wire>
+      <p1 x="-9640" y="-2040"/>
+      <p2 x="-9640" y="-1940"/>
+    </wire>
+    <wire>
+      <p1 x="-9660" y="-2200"/>
+      <p2 x="-9660" y="-2060"/>
+    </wire>
+    <wire>
+      <p1 x="-9660" y="-2060"/>
+      <p2 x="-9660" y="-1960"/>
+    </wire>
+    <wire>
+      <p1 x="-9100" y="-2160"/>
+      <p2 x="-9100" y="-1980"/>
+    </wire>
+    <wire>
+      <p1 x="-9100" y="-1980"/>
+      <p2 x="-9100" y="-1900"/>
+    </wire>
+    <wire>
+      <p1 x="-9260" y="-2380"/>
+      <p2 x="-9260" y="-2160"/>
+    </wire>
+    <wire>
+      <p1 x="-9260" y="-2160"/>
+      <p2 x="-9260" y="-1980"/>
+    </wire>
+    <wire>
+      <p1 x="-9680" y="-2300"/>
+      <p2 x="-9680" y="-2200"/>
+    </wire>
+    <wire>
+      <p1 x="-9680" y="-2160"/>
+      <p2 x="-9680" y="-1820"/>
+    </wire>
+    <wire>
+      <p1 x="-9360" y="-2200"/>
+      <p2 x="-9360" y="-2180"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>

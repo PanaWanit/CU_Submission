@@ -1,0 +1,48 @@
+t00.txt
+Match!!
+Check Clocks: 14
+Report Clock: 14 
+t01.txt
+Match!!
+Check Clocks: 265
+Report Clock: 265 
+t02.txt
+Match!!
+Check Clocks: 769
+Report Clock: 769 
+t03.txt
+Match!!
+Check Clocks: 1279
+Report Clock: 1279 
+t04.txt
+Match!!
+Check Clocks: 383
+Report Clock: 383 
+t05.txt
+Match!!
+Check Clocks: 383
+Report Clock: 383 
+t06.txt
+Match!!
+Check Clocks: 505
+Report Clock: 505 
+t07.txt
+Match!!
+Check Clocks: 511
+Report Clock: 511 
+t08.txt
+Match!!
+Check Clocks: 767
+Report Clock: 767 
+t09.txt
+Match!!
+Check Clocks: 767
+Report Clock: 767 
+t10.txt
+Match!!
+Check Clocks: 1278
+Report Clock: 1278 
+t11.txt
+Match!!
+Check Clocks: 1025
+Report Clock: 1025 
