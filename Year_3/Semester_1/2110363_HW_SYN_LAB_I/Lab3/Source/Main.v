@@ -28,15 +28,15 @@ module Main (
     InputBuffer i8(set, clock, set_imp);
     InputBuffer i9(reset, clock, reset_imp);
 
-    assign add_signal[0] = ({D,B,C,A} != 16'h9999 && up_imp[0]);
-    assign add_signal[1] = ({D,B,C} != 12'h999 && (up_imp[1] || cout[0] ));
-    assign add_signal[2] = ({D,B} != 8'h99 && (up_imp[2] || cout[1] )); 
+    assign add_signal[0] = ({D,C,B,A} != 16'h9999 && up_imp[0]);
+    assign add_signal[1] = ({D,C,B} != 12'h999 && (up_imp[1] || cout[0] ));
+    assign add_signal[2] = ({D,C} != 8'h99 && (up_imp[2] || cout[1] )); 
     assign add_signal[3] = ({D} != 4'h9 && (up_imp[3] || cout[2] )); 
 
 
-    assign sub_signal[0] = ({D,B,C,A} != 16'h0 && down_imp[0]); 
-    assign sub_signal[1] = ({D,B,C} != 12'h0 && (down_imp[1] || bout[0])); 
-    assign sub_signal[2] = ({D,B} != 8'h0 && (down_imp[2] || bout[1]));
+    assign sub_signal[0] = ({D,C,B,A} != 16'h0 && down_imp[0]); 
+    assign sub_signal[1] = ({D,C,B} != 12'h0 && (down_imp[1] || bout[0])); 
+    assign sub_signal[2] = ({D,C} != 8'h0 && (down_imp[2] || bout[1]));
     assign sub_signal[3] = ({D} != 4'h0 && (down_imp[3] || bout[2])); 
 
     BCD u0(add_signal[0], sub_signal[0], set_imp, reset_imp, clock, A, cout[0], bout[0]);
