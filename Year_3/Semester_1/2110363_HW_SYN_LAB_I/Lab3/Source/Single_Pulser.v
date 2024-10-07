@@ -3,7 +3,7 @@
 module Single_Pulser(
     input wire P,
     input wire clock,
-    output reg Z
+    output wire Z
     );
     reg tmp;
     always @(posedge clock) begin
