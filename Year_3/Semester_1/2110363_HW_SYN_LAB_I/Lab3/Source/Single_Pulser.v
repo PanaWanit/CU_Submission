@@ -6,8 +6,9 @@ module Single_Pulser(
     output reg Z
     );
     reg tmp;
-
-    tmp <= P;
-    Z <= (!tmp && P);
+    always @(posedge clock) begin
+        tmp <= P;
+        Z <= (!tmp && P);
+    end
 
 endmodule
