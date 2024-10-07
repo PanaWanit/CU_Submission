@@ -3,8 +3,9 @@
 module Main (
     input wire [3:0] up, down,
     input wire set, reset,
+    input wire clock,
     output wire [3:0] An,
-    output wire [3:0] C_LED
+    output wire [6:0] C_LED
     );
     wire [3:0] up_imp, down_imp; // output after input buffer 
     wire [3:0] add_signal, sub_signal; // can be add ?
@@ -42,6 +43,6 @@ module Main (
     BCD u1(add_signal[1], sub_signal[1], set_imp, reset_imp, clock, B, cout[1], bout[1]);
     BCD u2(add_signal[2], sub_signal[2], set_imp, reset_imp, clock, C, cout[2], bout[2]);
     BCD u3(add_signal[3], sub_signal[3], set_imp, reset_imp, clock, D, cout[3], bout[3]);
-    SevenSegment sg(A, B, C, D, clock, An, C_LED);
+    SevenSegment sg(A, B, C, D, clock, C_LED, An);
     
 endmodule
